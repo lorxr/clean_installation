@@ -101,6 +101,14 @@ sudo snap install htop
 # Install Vim
 sudo apt install vim
 
+# Install pyenv
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
+libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+curl https://pyenv.run | bash
+sudo echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc 
+sudo echo 'eval "$(pyenv init -)"' >> ~/.bashrc 
+sudo echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc 
 
 
 # Install NvidiaDrivers
