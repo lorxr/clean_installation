@@ -110,6 +110,8 @@ sudo echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
 sudo echo 'eval "$(pyenv init -)"' >> ~/.bashrc 
 sudo echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc 
 
+# Install nmap (for network vulnerabilities)
+sudo apt-get install nmap
 
 # Install NvidiaDrivers
 sudo add-apt-repository ppa:graphics-drivers/ppa
