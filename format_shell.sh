@@ -91,6 +91,9 @@ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ 
 sudo apt-get update
 sudo apt-get install atom
 
+# Install VS code
+sudo snap install --classic code
+
 # Install Postman
 sudo snap install postman
 
