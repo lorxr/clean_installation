@@ -91,8 +91,14 @@ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ 
 sudo apt-get update
 sudo apt-get install atom
 
-# Install VS code
+# Install VS code and extensions
 sudo snap install --classic code
+code --install-extension 4ops.terraform
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.python
+code --install-extension ms-vscode.cpptools
+code --install-extension ZainChen.json
+
 
 # Install Postman
 sudo snap install postman
