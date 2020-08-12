@@ -98,7 +98,7 @@ code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.python
 code --install-extension ms-vscode.cpptools
 code --install-extension ZainChen.json
-
+code --install-extension amazonwebservices.aws-toolkit-vscode
 
 # Install Postman
 sudo snap install postman
