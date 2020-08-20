@@ -86,7 +86,19 @@ sudo apt install gdebi-core
 sudo snap install dbeaver-ce
 
 # Install atom
-sudo snap install atom --classic
+wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+sudo apt-get update
+sudo apt-get install atom
+
+# Install VS code and extensions
+sudo snap install --classic code
+code --install-extension 4ops.terraform
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.python
+code --install-extension ms-vscode.cpptools
+code --install-extension ZainChen.json
+code --install-extension amazonwebservices.aws-toolkit-vscode
 
 # Install Postman
 sudo snap install postman
@@ -101,7 +113,17 @@ sudo snap install htop
 # Install Vim
 sudo apt install vim
 
+# Install pyenv
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
+libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+curl https://pyenv.run | bash
+sudo echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc 
+sudo echo 'eval "$(pyenv init -)"' >> ~/.bashrc 
+sudo echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc 
 
+# Install nmap (for network vulnerabilities)
+sudo apt-get install nmap
 
 # Install NvidiaDrivers
 sudo add-apt-repository ppa:graphics-drivers/ppa
