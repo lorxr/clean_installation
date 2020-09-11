@@ -151,3 +151,6 @@ sudo apt-get install --no-install-recommends \
 sudo apt-get install -y --no-install-recommends libnvinfer6=6.0.1-1+cuda10.1 \
     libnvinfer-dev=6.0.1-1+cuda10.1 \
     libnvinfer-plugin6=6.0.1-1+cuda10.1
+
+touch ~/.vimrc
+echo 'autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab' >> ~/.vimrc
