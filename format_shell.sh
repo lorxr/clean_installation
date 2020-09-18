@@ -172,3 +172,7 @@ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
 echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
 sudo apt-get update
 sudo apt-get install -y kubectl
+
+# Install k9s
+wget https://github.com/derailed/k9s/releases/download/v0.22.0/k9s_Linux_x86_64.tar.gz -O -| tar -xz
+sudo mv k9s /usr/local/bin
