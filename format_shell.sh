@@ -176,3 +176,7 @@ sudo apt-get install -y kubectl
 # Install k9s
 wget https://github.com/derailed/k9s/releases/download/v0.22.0/k9s_Linux_x86_64.tar.gz -O -| tar -xz
 sudo mv k9s /usr/local/bin
+
+# Install Dive tool for docker
+wget https://github.com/wagoodman/dive/releases/download/v0.9.2/dive_0.9.2_linux_amd64.deb
+sudo apt install ./dive_0.9.2_linux_amd64.deb
