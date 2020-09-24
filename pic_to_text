@@ -1,0 +1,14 @@
+#!/bin/sh 
+# Dependencies: tesseract-ocr imagemagick gnome-screenshot xclip
+
+SCR="$HOME/Pictures/ocr"
+
+gnome-screenshot -a -f $SCR.png
+
+mogrify -modulate 100,0 -resize 400% $SCR.png 
+#should increase detection rate
+
+tesseract $SCR.png $SCR --psm 3 -l eng
+cat $SCR.txt | xclip -selection clipboard
+
+exit
