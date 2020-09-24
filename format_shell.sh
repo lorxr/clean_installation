@@ -186,3 +186,13 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages
 sudo apt update
 sudo apt install gh
+
+# Install xclip for copy and pasting
+sudo apt-get install xclip
+
+# Install tesseract for ocr
+sudo apt-get install tesseract-ocr
+sudo apt-get install tesseract-ocr-por
+
+# Install imagemagick
+sudo apt install imagemagick
