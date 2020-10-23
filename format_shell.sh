@@ -207,3 +207,8 @@ sudo apt-get install helm
 # Install kustomize
 curl -s "https://raw.githubusercontent.com/\
 kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
+
+# Install argoCD
+wget https://github.com/argoproj/argo-cd/releases/download/$(curl --silent "https://api.github.com/repos/argoproj/argo-cd/releases/latest" | grep '"tag_name"' | sed -E 's/.*"([^"]+)".*/\1/')/argocd-linux-amd64
+chmod +x ./argocd-linux-amd64
+mv ./argocd-linux-amd64 /usr/bin/argocd
