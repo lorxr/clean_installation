@@ -125,6 +125,10 @@ sudo echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
 # Install nmap (for network vulnerabilities)
 sudo apt-get install nmap
 
+# Install PulseEffects
+sudo add-apt-repository ppa:mikhailnov/pulseeffects
+sudo apt-get install pulseaudio pulseeffects --install-recommends
+
 # Install NvidiaDrivers
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo ubuntu-drivers devices
