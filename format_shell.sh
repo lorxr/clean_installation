@@ -3,7 +3,7 @@
 # Update apt-get
 sudo apt-get update
 
-# Fix time zone problema between linux and windows
+# Fix time zone problem between linux and windows
 timedatectl set-local-rtc 1 --adjust-system-clock
 
 # Install Pycharm
