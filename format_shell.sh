@@ -57,6 +57,10 @@ sudo apt-get install qbittorrent
 # Install Nemo
 sudo apt install nemo
 
+# Making Nemo the default file manager
+xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+# xdg-mime default org.gnome.Nautilus.desktop inode/directory # to revert to nautilus run this command
+
 # Install VLC
 sudo snap install vlc
 
@@ -211,11 +215,12 @@ sudo apt-get install helm
 # Install kustomize
 curl -s "https://raw.githubusercontent.com/\
 kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
+mv ./kustomize /usr/local/bin/kustomize
 
 # Install argoCD
 wget https://github.com/argoproj/argo-cd/releases/download/$(curl --silent "https://api.github.com/repos/argoproj/argo-cd/releases/latest" | grep '"tag_name"' | sed -E 's/.*"([^"]+)".*/\1/')/argocd-linux-amd64
 chmod +x ./argocd-linux-amd64
-mv ./argocd-linux-amd64 /usr/bin/argocd
+mv ./argocd-linux-amd64 /usr/local/bin/argocd
 
 # Install traceroute
 sudo apt-get install traceroute
