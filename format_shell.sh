@@ -22,9 +22,6 @@ git config credential.helper cache
 # Install pip for python3
 sudo apt install python3-pip
 
-# Install Sublime
-sudo snap install sublime-text --classic
-
 # Install Docker
 sudo apt-get install \
     apt-transport-https \
