@@ -252,4 +252,9 @@ sudo gdebi ~/discord.deb
 # Install Okular pdf reader
 sudo snap install okular
 
+# Change wallpaper
+wget -O wallpaper.jpg --header="User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11" https://wallpaperaccess.com/download/colorful-wolf-946370
+gsettings set org.gnome.desktop.background picture-uri file:///$PWD/wallpaper.jpg
+
+
 sudo reboot
