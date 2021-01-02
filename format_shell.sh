@@ -230,5 +230,7 @@ sudo apt install terraform
 # Install flameshot clipping tool
 sudo apt install flameshot
 
+# Install FileZilla
+sudo apt-get install filezilla
 
 sudo reboot
