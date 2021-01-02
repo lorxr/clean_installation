@@ -16,3 +16,8 @@ install both of these things:
 - https://extensions.gnome.org/extension/1160/dash-to-panel/
 
 and import the config file inside this repo
+
+
+### pic_to_text
+
+create a keyboard shortcut like "ctrl + shift + ç" linking to pic_to_text
