@@ -1,0 +1,6 @@
+[/]
+night-light-enabled=false
+night-light-schedule-automatic=false
+night-light-schedule-from=23.0
+night-light-schedule-to=9.0
+night-light-temperature=uint32 2700
