@@ -249,4 +249,7 @@ sudo apt install steam
 wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
 sudo gdebi ~/discord.deb 
 
+# Install Okular pdf reader
+sudo snap install okular
+
 sudo reboot
