@@ -245,4 +245,8 @@ sudo apt-get install virtualbox—ext–pack
 # Install Steam
 sudo apt install steam
 
+# Install discord
+wget -O ~/discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
+sudo gdebi ~/discord.deb 
+
 sudo reboot
