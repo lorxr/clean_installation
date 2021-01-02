@@ -6,6 +6,23 @@ sudo apt-get update
 # Fix time zone problem between linux and windows
 timedatectl set-local-rtc 1 --adjust-system-clock
 
+# Install zsh
+sudo apt install zsh
+
+# Installing oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Installing zsh plugins:
+sudo apt-get install autojump
+sudo apt-get install fzf
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+cp ./.zshrc $HOME/.zshrc
+
+# Making zsh the default shell (applied after a user logout)
+chsh -s $(which zsh)
+
+
 # Install Pycharm
 sudo snap install pycharm-community --classic
 
@@ -115,6 +132,9 @@ curl https://pyenv.run | bash
 sudo echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc 
 sudo echo 'eval "$(pyenv init -)"' >> ~/.bashrc 
 sudo echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc 
+sudo echo 'alias python='python3'' >> ~/.zshrc 
+sudo ln -s ~/.pyenv/bin/pyenv /usr/local/bin/pyenv # creates symlink
+source ~/.zshrc
 
 # Install nmap (for network vulnerabilities)
 sudo apt-get install nmap
@@ -149,21 +169,6 @@ sudo apt-get install -y --no-install-recommends libnvinfer6=6.0.1-1+cuda10.1 \
 touch ~/.vimrc
 echo 'autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab' >> ~/.vimrc
 
-# Install zsh
-sudo apt install zsh
-
-# Installing oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Installing zsh plugins:
-sudo apt-get install autojump
-sudo apt-get install fzf
-git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-cp ./.zshrc $HOME/.zshrc
-
-# Making zsh the default shell (applied after a user logout)
-chsh -s $(which zsh)
 
 # Install kubectl
 sudo apt-get update && sudo apt-get install -y apt-transport-https gnupg2
