@@ -267,4 +267,7 @@ sudo apt install dconf-cli dconf-editor
 # change the dash to panel settings
 dconf load /org/gnome/shell/extensions/dash-to-panel/ < ./dtp_settings
 
+# change the night light settings
+dconf load /org/gnome/settings-daemon/plugins/color/ > ./night_light
+
 sudo reboot
