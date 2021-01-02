@@ -89,12 +89,6 @@ sudo apt install gdebi-core
 # Install Dbeaver
 sudo snap install dbeaver-ce
 
-# Install atom
-wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
-sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
-sudo apt-get update
-sudo apt-get install atom
-
 # Install VS code and extensions
 sudo snap install --classic code
 code --install-extension 4ops.terraform
@@ -112,7 +106,6 @@ sudo snap install slack --classic
 
 # Install Htop
 sudo snap install htop
-
 
 # Install Vim
 sudo apt install vim
