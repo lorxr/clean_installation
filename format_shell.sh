@@ -199,6 +199,9 @@ sudo apt-get install tesseract-ocr-por
 # Install imagemagick
 sudo apt install imagemagick
 
+# Install pic_to_text
+cp -f ./pic_to_text /usr/local/bin/pic_to_text
+
 # Install helm
 curl https://baltocdn.com/helm/signing.asc | sudo apt-key add -
 sudo apt-get install apt-transport-https --yes
