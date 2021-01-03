@@ -204,6 +204,7 @@ sudo apt install imagemagick
 
 # Install pic_to_text
 cp -f ./pic_to_text /usr/local/bin/pic_to_text
+sudo chmod +x /usr/local/bin/pic_to_text
 
 # Install helm
 curl https://baltocdn.com/helm/signing.asc | sudo apt-key add -
