@@ -275,7 +275,10 @@ dconf load /org/gnome/settings-daemon/plugins/color/ < ./night_light
 # change the appearance of ubuntu
 dconf write /org/gnome/desktop/interface/gtk-theme "'Yaru-dark'"
 
+
 # change terminal appearance
 dconf load /org/gnome/terminal/legacy/profiles:/ < ./gnome-terminal-profiles.dconf
+
+sudo apt -y autoremove
 
 sudo reboot
