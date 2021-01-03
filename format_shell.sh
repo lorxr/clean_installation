@@ -105,12 +105,12 @@ sudo snap install dbeaver-ce
 
 # Install VS code and extensions
 sudo snap install --classic code
-code --install-extension 4ops.terraform
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-python.python
-code --install-extension ms-vscode.cpptools
-code --install-extension ZainChen.json
-code --install-extension amazonwebservices.aws-toolkit-vscode
+sudo -u $USER code --install-extension 4ops.terraform
+sudo -u $USER code --install-extension ms-azuretools.vscode-docker
+sudo -u $USER code --install-extension ms-python.python
+sudo -u $USER code --install-extension ms-vscode.cpptools
+sudo -u $USER code --install-extension ZainChen.json
+sudo -u $USER code --install-extension amazonwebservices.aws-toolkit-vscode
 
 # Install Postman
 sudo snap install postman
@@ -184,6 +184,7 @@ sudo mv k9s /usr/local/bin
 # Install Dive tool for docker
 wget https://github.com/wagoodman/dive/releases/download/v0.9.2/dive_0.9.2_linux_amd64.deb
 sudo apt install ./dive_0.9.2_linux_amd64.deb
+rm ./dive_0.9.2_linux_amd64.deb
 
 # Install github CLI
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
