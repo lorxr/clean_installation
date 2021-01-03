@@ -239,13 +239,13 @@ sudo apt-get install filezilla
 sudo snap install drawio
 
 # Install Wireshark
-sudo add-apt-repository ppa:wireshark-dev/stable
-sudo apt-get update
-sudo apt-get install wireshark
+#sudo add-apt-repository ppa:wireshark-dev/stable#
+#sudo apt-get update
+#sudo apt-get install wireshark
 
 # Install VirtualBox
-sudo apt-get install virtualbox
-sudo apt-get install virtualbox—ext–pack
+#sudo apt-get install virtualbox
+#sudo apt-get install virtualbox—ext–pack
 
 # Install Steam
 sudo apt install steam
