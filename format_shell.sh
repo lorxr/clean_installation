@@ -270,7 +270,7 @@ sudo apt install dconf-cli dconf-editor
 dconf load /org/gnome/shell/extensions/dash-to-panel/ < ./dtp_settings
 
 # change the night light settings
-dconf load /org/gnome/settings-daemon/plugins/color/ > ./night_light
+dconf load /org/gnome/settings-daemon/plugins/color/ < ./night_light
 
 # change the appearance of ubuntu
 dconf write /org/gnome/desktop/interface/gtk-theme "'Yaru-dark'"
