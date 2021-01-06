@@ -203,7 +203,7 @@ sudo apt-get install tesseract-ocr-por
 sudo apt install imagemagick
 
 # Install pic_to_text
-cp -f ./pic_to_text /usr/local/bin/pic_to_text
+sudo cp -f ./pic_to_text /usr/local/bin/
 sudo chmod +x /usr/local/bin/pic_to_text
 
 # Install helm
