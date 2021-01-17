@@ -4,7 +4,7 @@ usage:
 
 chmod +x ./format_shell.sh
 
-yes -Y | ./format_shell.sh
+yes | ./format_shell.sh
 
 
 ### Dash to panel
