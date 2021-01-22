@@ -279,6 +279,14 @@ dconf write /org/gnome/desktop/interface/gtk-theme "'Yaru-dark'"
 # change terminal appearance
 dconf load /org/gnome/terminal/legacy/profiles:/ < ./gnome-terminal-profiles.dconf
 
+
+# Install Poetry
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+
+# Install Poetry zsh plugin
+sudo mkdir ~/.oh-my-zsh/plugins/poetry 
+sudo poetry completions zsh > poetry/_poetry
+
 sudo apt -y autoremove
 
 sudo reboot
