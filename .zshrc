@@ -77,6 +77,7 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     fzf
+    poetry
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -108,3 +109,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH="$HOME/.poetry/bin:$PATH"
+alias python=python3
