@@ -110,3 +110,4 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/.poetry/bin:$PATH"
 alias python=python3
+eval "$(pyenv init -)"
