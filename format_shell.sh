@@ -287,6 +287,9 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 sudo mkdir ~/.oh-my-zsh/plugins/poetry 
 sudo poetry completions zsh > poetry/_poetry
 
+# Install Obsidian Md - Note taking app
+flatpak install -y  flathub md.obsidian.Obsidian
+
 sudo apt -y autoremove
 
 sudo reboot
