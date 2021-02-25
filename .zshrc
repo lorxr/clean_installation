@@ -78,6 +78,7 @@ plugins=(
     zsh-syntax-highlighting
     fzf
     poetry
+    bgnotify
 )
 
 source $ZSH/oh-my-zsh.sh
